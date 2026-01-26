@@ -1,6 +1,7 @@
 var sidebarTxt = '* [首页](/)\n';
 var path = require('path');
 var curPath = path.resolve('./');
+var contentPath = path.join(curPath, 'md');
 
 function walkSync(currentDirPath, prefixBlank, callback) {
     var fs = require('fs'),
@@ -17,7 +18,7 @@ function walkSync(currentDirPath, prefixBlank, callback) {
     });
 }
 
-walkSync(curPath, '', function (filePath, stat) {
+walkSync(contentPath, '', function (filePath, stat) {
     if (".md" == path.extname(filePath).toLowerCase()
         && '_' != path.basename(filePath).substr(0, 1)
         && 'README.md' != path.basename(filePath)) {
