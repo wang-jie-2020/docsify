@@ -11,7 +11,7 @@ function walkSync(currentDirPath, prefixBlank, callback) {
         var stat = fs.statSync(filePath);
         if (stat.isFile()) {
             callback(filePath, stat);
-        } else if (stat.isDirectory() && ".git" != path.basename(filePath) && '_' !== path.basename(filePath).slice(0, 1)) {
+        } else if (stat.isDirectory() && ".git" != path.basename(filePath)) {    // && '_' !== path.basename(filePath).slice(0, 1))
             sidebarTxt += prefixBlank + '* ' + path.basename(filePath) + '\n';
             walkSync(filePath, prefixBlank + '  ', callback);
         }
