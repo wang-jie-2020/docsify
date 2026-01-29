@@ -20,3 +20,5 @@
     - [SQLSERVER](/md/03.数据组件/SQLSERVER.md)
     - [SQL示例-ORACLE聚合](/md/03.数据组件/SQL示例-ORACLE聚合.md)
     - [连接字符串](/md/03.数据组件/连接字符串.md)
+* 04.代码片段
+    - [MPJ](/md/04.代码片段/MPJ.md)
