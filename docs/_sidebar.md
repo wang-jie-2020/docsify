@@ -3,6 +3,7 @@
     - [前端](/md/00.随手记录/前端.md)
     - [服务器运维](/md/00.随手记录/服务器运维.md)
     - [锂电池背景知识](/md/00.随手记录/锂电池背景知识.md)
+    - [随手记录](/md/00.随手记录/随手记录.md)
 * 01.编程理论
     - [GIT管理](/md/01.编程理论/GIT管理.md)
     - [分布式事务](/md/01.编程理论/分布式事务.md)
@@ -15,6 +16,9 @@
       - [TAP-线程存储](/md/02.编程语言/CSharp/TAP-线程存储.md)
   * Java
       - [JDK-CompletableFuture](/md/02.编程语言/Java/JDK-CompletableFuture.md)
+      - [JDK-Enum](/md/02.编程语言/Java/JDK-Enum.md)
+      - [JDK-函数编程](/md/02.编程语言/Java/JDK-函数编程.md)
+      - [JDK-集合](/md/02.编程语言/Java/JDK-集合.md)
 * 03.数据组件
     - [MYSQL](/md/03.数据组件/MYSQL.md)
     - [ORACLE](/md/03.数据组件/ORACLE.md)
