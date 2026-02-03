@@ -1,9 +1,5 @@
 ## POSTGRESQL
 
-
-
-### Partition Table
-
 通过运维工具进行数据的迁移:
 
 ```bash

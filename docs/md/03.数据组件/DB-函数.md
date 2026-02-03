@@ -1,54 +1,82 @@
+### MYSQL
+
+#### 1.1 数学函数
+
+数学函数用于执行数学计算。
+
+- ‌**绝对值**‌：`ABS(x)` 返回 x 的绝对值。‌
+- ‌**取余**‌：`MOD(x, y)` 或 `x % y` 返回 x 除以 y 的余数。‌
+- ‌**向下取整**‌：`FLOOR(x)` 返回小于或等于 x 的最大整数。‌
+- ‌**向上取整**‌：`CEIL(x)` 或 `CEILING(x)` 返回大于或等于 x 的最小整数。‌
+- ‌**四舍五入**‌：`ROUND(x, d)` 返回 x 四舍五入后保留 d 位小数的结果。‌
+- ‌**截断**‌：`TRUNCATE(x, d)` 返回 x 截断到 d 位小数的结果，不进行四舍五入。‌
+- ‌**随机数**‌：`RAND()` 返回一个 0 到 1 之间的随机浮点数。‌
+- ‌**圆周率**‌：`PI()` 返回圆周率 π 的值。‌
+
+#### 1.2 字符串函数
+
+字符串函数用于处理文本数据。
+
+- ‌**大小写转换**‌：`UPPER(str)` 或 `UCASE(str)` 将字符串转换为大写；`LOWER(str)` 或 `LCASE(str)` 将字符串转换为小写。‌
+- ‌**长度计算**‌：`LENGTH(str)` 返回字符串的字节长度；`CHAR_LENGTH(str)` 返回字符串的字符个数。‌
+- ‌**字符串拼接**‌：`CONCAT(str1, str2, ...)` 将多个字符串连接成一个字符串。‌
+- ‌**子串截取**‌：`SUBSTR(str, start, length)` 或 `SUBSTRING(str, start, length)` 从字符串 str 的第 start 位开始截取长度为 length 的子串（索引从1开始）。‌
+- ‌**字符串比较**‌：`strcmp(str1, str2)` 比较两个字符串，返回0表示相等，返回1表示 str1 > str2，返回-1表示 str1 < str2。‌
+- ‌**查找子串**‌：`INSTR(str, substr)` 返回子串 substr 在字符串 str 中第一次出现的起始位置（索引从1开始），如果未找到则返回0。‌
+- ‌**去除空格/字符**‌：`TRIM([remstr FROM] str)` 去掉字符串 str 前后的空格（或指定的字符 remstr）。‌
+- **在由逗号分隔的字符串列表中查找指定值的位置**: `FIND_IN_SET(str, strlist)`
+
+#### 1.3 日期函数
+
+日期函数用于处理日期和时间数据。
+
+- ‌**获取当前日期时间**‌：`NOW()` 返回当前日期和时间；`CURDATE()` 返回当前日期；`CURTIME()` 返回当前时间。‌
+
+  *有三个时间函数用来获取当前的时间，分别是now()、current_timestamp() 和 sysdate()*
+
+- ‌**日期格式化**‌：`DATE_FORMAT(date, format)` 将日期按照指定格式转换为字符串。‌
+
+- ‌**字符串转日期**‌：`STR_TO_DATE(str, format)` 将符合格式的字符串解析为日期。‌
+
+- ‌**日期差**‌：`DATEDIFF(date1, date2)` 计算两个日期之间的天数差（date1 - date2）。‌
+
+- ‌**提取日期部分**‌：`YEAR(date)`、`MONTH(date)`、`DAY(date)` 分别返回日期的年、月、日部分。‌
+
+- ‌**提取时间部分**‌：`HOUR(time)`、`MINUTE(time)`、`SECOND(time)` 分别返回时间的时、分、秒部分。‌
+
+#### 1.4 流程控制函数
+
+流程控制函数允许在 SQL 中实现条件逻辑。
+
+- ‌**IF 函数**‌：`IF(condition, value_if_true, value_if_false)` 如果 condition 为真，返回 value_if_true，否则返回 value_if_false。‌
+
+- ‌CASE 结构:
+
+  等值判断:
+
+  ```mysql
+  CASE expression
+      WHEN value1 THEN result1
+      WHEN value2 THEN result2
+      ...
+      ELSE resultN
+  END
+  ```
+
+  区间判断‌：类似于多重 if 语句。
+
+  ```mysql
+  CASE
+      WHEN condition1 THEN result1
+      WHEN condition2 THEN result2
+      ...
+      ELSE resultN
+  END
+  ```
+
+
+
 ## ORACLE
-
-### 字符集/大小写
-
-- **数据库/表名**：默认不敏感, 且默认都会转大写
-- **数据内容**：默认敏感
-
-虽然Oracle默认区分大小写，但有一个**会话级参数 `NLS_COMP` 和 `NLS_SORT`** 可以在当前连接中临时改变这一行为。
-
-```plsql
-# 查看当前设置
-SELECT SYS_CONTEXT('USERENV', 'NLS_COMP') AS NLS_COMP,
-       SYS_CONTEXT('USERENV', 'NLS_SORT') AS NLS_SORT
-FROM DUAL;
-
-ALTER SESSION SET NLS_COMP = LINGUISTIC;
-ALTER SESSION SET NLS_SORT = BINARY_CI; -- `_CI` 后缀表示 Case-Insensitive
--- 设置后，当前会话中的字符串比较将不区分大小写
-SELECT * FROM users WHERE username = 'admin'; -- 现在可以查到 'Admin'
-```
-
-
-
-### 常用运维语句
-
-```SQL
-SELECT * FROM V$SESSION;
-
--- 允许最大进程数、连接数
-select name,value from v$parameter where name in('processes' ,'sessions');
-
--- 当前进程数、连接数
-select count(1) from v$session;
-select count(1) from v$process;
-
-
-/*
-	IDLE_TIME：限制每个会话所允许的最长连续空闲时间，超过这个时间会话将自动断开。（参数值是一个整数，单位是分钟，UNLIMITED 不限制）
-	CONNECT_TIME：限制指定会话的总运行时间限制，超过这个时间会话将自动断开。（参数值是一个整数，单位是分钟，UNLIMITED 不限制）
-*/
-SELECT resource_name,resource_type,LIMIT FROM dba_profiles 
-WHERE resource_Name IN ( 'IDLE_TIME', 'CONNECT_TIME' ) AND PROFILE='DEFAULT' ;
-
--- 修改空闲超时时间10分钟
-ALTER PROFILE DEFAULT LIMIT IDLE_TIME 10;
-
-```
-
-
-
-### 函数
 
 | 类别         | 核心功能                                                     | 官方文档（Oracle 19c）                                       |
 | :----------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -113,7 +141,7 @@ ALTER PROFILE DEFAULT LIMIT IDLE_TIME 10;
 | **`DECODE(expr, search1, result1, ..., default)`** | 类似于简单的 `CASE`，若 `expr` 等于 `search1` 则返回 `result1`，以此类推，否则返回默认值。 | `DECODE(status, 'A', '激活', 'I', '失效', '未知')` |
 | **`CASE ... WHEN ... THEN ... END`**               | 条件判断，功能比 `DECODE` 更强大。                           | `CASE WHEN score >= 90 THEN '优秀' END`            |
 
-#### 1.4 分析函数
+#### 1.6 分析函数
 
 | 函数                               | 功能描述                                                     | 简单示例（假设按部门`dept_id`分区，按薪水`salary`排序）      |
 | :--------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -124,8 +152,66 @@ ALTER PROFILE DEFAULT LIMIT IDLE_TIME 10;
 | **`AVG(col) OVER(...)`**           | 计算组内移动平均值。                                         | `AVG(salary) OVER(PARTITION BY dept_id ORDER BY hire_date ROWS 2 PRECEDING)` |
 | **`LAG(col, n)`** / `LEAD(col, n)` | 访问组内当前行之前（`LAG`）或之后（`LEAD`）第 `n` 行的数据。 | `LAG(salary, 1) OVER(PARTITION BY dept_id ORDER BY hire_date)` |
 
-#### 1.5 补充
+#### 1.7 补充
 
 **cast(expr AS type_name):** 用于将某种数据类型的数据显式转换为另一种数据类型的数据。
 
 **row_number() over (partition by col1 order by col2) :** 表示根据col1分区，在分组内部根据 col2排序，而这个值就表示每组内部排序后的
+
+
+
+## SQLSERVER
+
+#### 1.1 字符串函数
+
+用于处理文本数据，如截取、连接、查找和替换。
+
+| 函数                                           | 功能描述                                     | 示例                                 |
+| :--------------------------------------------- | :------------------------------------------- | :----------------------------------- |
+| `LEN(string)`                                  | 返回字符串长度（忽略尾部空格）。             | `LEN('Hello')` → 5                   |
+| `SUBSTRING(expr, start, length)`               | 从指定位置截取子串（start从1开始）。         | `SUBSTRING('SQL', 2, 2)` → 'QL'      |
+| `CONCAT(str1, str2, ...)`                      | 连接多个字符串（自动处理NULL）。             | `CONCAT('A', NULL, 'B')` → 'AB'      |
+| `CHARINDEX(substr, string)`                    | 查找子串首次出现的位置，未找到则返回0。      | `CHARINDEX('L', 'HELLO')` → 3        |
+| `REPLACE(string, old, new)`                    | 替换字符串中所有出现的指定子串。             | `REPLACE('A-B-C', '-', '')` → 'ABC'  |
+| `UPPER(string) / LOWER(string)`                | 将字符串转换为全大写/全小写。                | `UPPER('sql')` → 'SQL'               |
+| `LTRIM(string) / RTRIM(string)`                | 去除字符串左侧/右侧的空格。                  | `LTRIM(' test')` → 'test'            |
+| `REVERSE(char_expr)`                           | 反转字符串。                                 | `REVERSE('123')` → '321'             |
+| `STUFF(char_expr1, start, length, char_expr2)` | 删除指定长度的字符，并在该位置插入新字符串。 | `STUFF('ABCD', 2, 2, 'XY')` → 'AXYD' |
+
+#### 1.2 日期和时间函数
+
+用于获取、计算和格式化日期时间。
+
+| 函数                                     | 功能描述                                       | 示例                                             |
+| :--------------------------------------- | :--------------------------------------------- | :----------------------------------------------- |
+| `GETDATE()`                              | 返回当前系统日期和时间（`datetime`类型）。     | `GETDATE()` → `2023-12-09 10:30:00.123`          |
+| `DATEADD(datepart, number, date)`        | 为日期添加一个时间间隔（如DAY, MONTH, YEAR）。 | `DATEADD(DAY, 5, '2023-01-01')` → `2023-01-06`   |
+| `DATEDIFF(datepart, startdate, enddate)` | 返回两个日期之间的时间间隔。                   | `DATEDIFF(MONTH, '2023-01', '2023-03')` → 2      |
+| `DATEPART(datepart, date)`               | 返回日期的指定部分（如年、月、日）。           | `DATEPART(YEAR, '2023-12-09')` → 2023            |
+| `DATENAME(datepart, date)`               | 以字符串形式返回日期的指定部分（如星期几）。   | `DATENAME(WEEKDAY, '2023-12-09')` → 'Saturday'   |
+| `YEAR(date) / MONTH(date) / DAY(date)`   | 返回日期的年份/月份/日。                       | `YEAR('2023-12-09')` → 2023                      |
+| `EOMONTH(date)`                          | 返回指定日期所在月份的最后一天。               | `EOMONTH('2023-02-01')` → `2023-02-28`           |
+| `CONVERT(data_type, date, style)`        | 将日期转换为指定样式的字符串。                 | `CONVERT(VARCHAR, GETDATE(), 23)` → '2023-12-09' |
+
+#### 1.3 数学函数
+
+用于执行数值计算。
+
+| 函数                          | 功能描述                                     | 示例                      |
+| :---------------------------- | :------------------------------------------- | :------------------------ |
+| `ABS(numeric_expr)`           | 返回数值的绝对值。                           | `ABS(-10.5)` → 10.5       |
+| `ROUND(numeric_expr, length)` | 将数值四舍五入到指定精度。                   | `ROUND(3.1415, 2)` → 3.14 |
+| `CEILING(numeric_expr)`       | 向上取整，返回大于等于该数的最小整数。       | `CEILING(3.2)` → 4        |
+| `FLOOR(numeric_expr)`         | 向下取整，返回小于等于该数的最大整数。       | `FLOOR(3.9)` → 3          |
+| `POWER(float_expr, y)`        | 返回指定数值的幂。                           | `POWER(2, 3)` → 8         |
+| `SQRT(float_expr)`            | 返回数值的平方根。                           | `SQRT(9)` → 3             |
+| `RAND([seed])`                | 返回一个0到1之间的随机浮点数（可指定种子）。 | `RAND()` → 0.7632         |
+
+#### 1.4 类型转换函数
+
+用于转换数据类型。
+
+| 函数                                       | 功能描述                                               | 示例                                            |
+| :----------------------------------------- | :----------------------------------------------------- | :---------------------------------------------- |
+| `CAST(expression AS data_type)`            | 将表达式显式转换为另一种数据类型。                     | `CAST('123' AS INT)` → 123                      |
+| `CONVERT(data_type, expression [, style])` | 转换数据类型，常用于日期/时间的格式化（`style`参数）。 | `CONVERT(VARCHAR, GETDATE(), 112)` → '20231209' |

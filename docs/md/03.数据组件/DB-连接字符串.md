@@ -22,7 +22,11 @@
 
 - POSTGRESQL
 
+  ```bash
+  "PostgreSQL": "Host=10.201.17.14;Port=15400;Database=ess;Username=root;Password=123456;"
+  ```
 
+  
 
 ### java
 
@@ -33,3 +37,9 @@
   ```
 
 - POSTGRESQL
+
+  ```bash
+  jdbc:postgresql://10.201.17.14:15400/ess?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+  ```
+
+  

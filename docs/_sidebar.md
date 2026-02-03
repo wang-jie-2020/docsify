@@ -36,18 +36,21 @@
       - [Spring-Aspect](/md/02.编程语言/Java/Spring-Aspect.md)
       - [Spring-i18n](/md/02.编程语言/Java/Spring-i18n.md)
       - [Spring-容器和上下文](/md/02.编程语言/Java/Spring-容器和上下文.md)
+      - [Spring-过滤和拦截](/md/02.编程语言/Java/Spring-过滤和拦截.md)
       - [Spring-静态资源](/md/02.编程语言/Java/Spring-静态资源.md)
-      - [Srping-过滤和拦截](/md/02.编程语言/Java/Srping-过滤和拦截.md)
+  * Python
+      - [环境搭建](/md/02.编程语言/Python/环境搭建.md)
   * Vue
       - [埋点追踪](/md/02.编程语言/Vue/埋点追踪.md)
 * 03.数据组件
-    - [MYSQL](/md/03.数据组件/MYSQL.md)
-    - [ORACLE](/md/03.数据组件/ORACLE.md)
-    - [POSTGRESQL](/md/03.数据组件/POSTGRESQL.md)
+    - [DB-Partition](/md/03.数据组件/DB-Partition.md)
+    - [DB-函数](/md/03.数据组件/DB-函数.md)
+    - [DB-字符集和大小写](/md/03.数据组件/DB-字符集和大小写.md)
+    - [DB-运维语句](/md/03.数据组件/DB-运维语句.md)
+    - [DB-连接字符串](/md/03.数据组件/DB-连接字符串.md)
     - [REDIS](/md/03.数据组件/REDIS.md)
-    - [SQLSERVER](/md/03.数据组件/SQLSERVER.md)
     - [SQL示例-ORACLE聚合](/md/03.数据组件/SQL示例-ORACLE聚合.md)
-    - [连接字符串](/md/03.数据组件/连接字符串.md)
+    - [SQL示例-常见DDL](/md/03.数据组件/SQL示例-常见DDL.md)
 * 04.代码片段
     - [MPJ](/md/04.代码片段/MPJ.md)
 * 05.杂项
