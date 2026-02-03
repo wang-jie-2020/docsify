@@ -1,7 +1,7 @@
 * [首页](/)
 * 00.常用
     - [常用记录](/md/00.常用/常用记录.md)
-    - [服务器运维](/md/00.常用/服务器运维.md)
+    - [运维](/md/00.常用/运维.md)
 * 01.编程理论
     - [GIT管理](/md/01.编程理论/GIT管理.md)
     - [分布式事务](/md/01.编程理论/分布式事务.md)
@@ -9,13 +9,24 @@
     - [雪花](/md/01.编程理论/雪花.md)
 * 02.编程语言
   * CSharp
+      - [HTTP-HttpClientFactory](/md/02.编程语言/CSharp/HTTP-HttpClientFactory.md)
+      - [HTTP-模型绑定和验证](/md/02.编程语言/CSharp/HTTP-模型绑定和验证.md)
+      - [HTTP-模板代码差异](/md/02.编程语言/CSharp/HTTP-模板代码差异.md)
+      - [HTTP-认证和鉴权](/md/02.编程语言/CSharp/HTTP-认证和鉴权.md)
+      - [HTTP-语言国际化](/md/02.编程语言/CSharp/HTTP-语言国际化.md)
+      - [IOC-依赖注入](/md/02.编程语言/CSharp/IOC-依赖注入.md)
       - [TAP-线程上下文](/md/02.编程语言/CSharp/TAP-线程上下文.md)
       - [TAP-线程存储](/md/02.编程语言/CSharp/TAP-线程存储.md)
+      - [链路追踪-skyapm原理](/md/02.编程语言/CSharp/链路追踪-skyapm原理.md)
+      - [链路追踪-自动化探针](/md/02.编程语言/CSharp/链路追踪-自动化探针.md)
+      - [链路追踪-诊断](/md/02.编程语言/CSharp/链路追踪-诊断.md)
   * Java
       - [JDK-CompletableFuture](/md/02.编程语言/Java/JDK-CompletableFuture.md)
       - [JDK-Enum](/md/02.编程语言/Java/JDK-Enum.md)
       - [JDK-函数编程](/md/02.编程语言/Java/JDK-函数编程.md)
       - [JDK-集合](/md/02.编程语言/Java/JDK-集合.md)
+  * Vue
+      - [埋点追踪](/md/02.编程语言/Vue/埋点追踪.md)
 * 03.数据组件
     - [MYSQL](/md/03.数据组件/MYSQL.md)
     - [ORACLE](/md/03.数据组件/ORACLE.md)
@@ -27,5 +38,7 @@
 * 04.代码片段
     - [MPJ](/md/04.代码片段/MPJ.md)
 * 05.杂项
+    - [github-pages&actions](/md/05.杂项/github-pages&actions.md)
+    - [jenkins-cicd](/md/05.杂项/jenkins-cicd.md)
     - [神经网络扫盲](/md/05.杂项/神经网络扫盲.md)
     - [锂电池背景知识](/md/05.杂项/锂电池背景知识.md)
