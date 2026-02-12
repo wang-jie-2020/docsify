@@ -45,15 +45,14 @@
   * Vue
       - [埋点追踪](/md/02.编程语言/Vue/埋点追踪.md)
 * 03.数据组件
-    - [DB-Partition](/md/03.数据组件/DB-Partition.md)
-    - [DB-函数](/md/03.数据组件/DB-函数.md)
+    - [Ado和Jdbc连接字符串](/md/03.数据组件/Ado和Jdbc连接字符串.md)
     - [DB-字符集和大小写](/md/03.数据组件/DB-字符集和大小写.md)
-    - [DB-运维语句](/md/03.数据组件/DB-运维语句.md)
-    - [DB-连接字符串](/md/03.数据组件/DB-连接字符串.md)
+    - [DB-数据库函数](/md/03.数据组件/DB-数据库函数.md)
     - [MATLAB-Compiler](/md/03.数据组件/MATLAB-Compiler.md)
     - [REDIS](/md/03.数据组件/REDIS.md)
-    - [SQL示例-ORACLE聚合](/md/03.数据组件/SQL示例-ORACLE聚合.md)
-    - [SQL示例-常见DDL](/md/03.数据组件/SQL示例-常见DDL.md)
+    - [SQL示例-DDL语句](/md/03.数据组件/SQL示例-DDL语句.md)
+    - [SQL示例-运维语句](/md/03.数据组件/SQL示例-运维语句.md)
+    - [运维示例-PG的Partition](/md/03.数据组件/运维示例-PG的Partition.md)
 * 04.代码片段
     - [MPJ](/md/04.代码片段/MPJ.md)
 * 05.杂项
