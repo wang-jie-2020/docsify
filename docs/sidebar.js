@@ -12,6 +12,14 @@ function walkSync(currentDirPath, prefixBlank, callback) {
         if (stat.isFile()) {
             callback(filePath, stat);
         } else if (stat.isDirectory() && ".git" != path.basename(filePath)) {    // && '_' !== path.basename(filePath).slice(0, 1))
+
+            // 如果文件夹下已经有了则不再生成
+            var sidebarPath = path.join(filePath, '_sidebar.md');
+            if (fs.existsSync(sidebarPath, fs.constants.F_OK)) {
+                sidebarTxt += prefixBlank + '- [' + path.basename(filePath) + '](' + sidebarPath.substr(curPath.length).replace(/\\/g, '/') + ')\n';
+                return;
+            }
+
             sidebarTxt += prefixBlank + '* ' + path.basename(filePath) + '\n';
             walkSync(filePath, prefixBlank + '  ', callback);
         }

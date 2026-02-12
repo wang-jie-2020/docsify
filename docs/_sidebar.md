@@ -41,24 +41,9 @@
       - [Spring-过滤和拦截](/md/02.编程语言/Java/Spring-过滤和拦截.md)
       - [Spring-静态资源](/md/02.编程语言/Java/Spring-静态资源.md)
   * Python
-    * 数据分析
-        - [66.数据分析概述](/md/02.编程语言/Python/数据分析/66.数据分析概述.md)
-        - [67.环境准备](/md/02.编程语言/Python/数据分析/67.环境准备.md)
-        - [68.NumPy的应用-1](/md/02.编程语言/Python/数据分析/68.NumPy的应用-1.md)
-        - [69.NumPy的应用-2](/md/02.编程语言/Python/数据分析/69.NumPy的应用-2.md)
-        - [70.NumPy的应用-3](/md/02.编程语言/Python/数据分析/70.NumPy的应用-3.md)
-        - [71.NumPy的应用-4](/md/02.编程语言/Python/数据分析/71.NumPy的应用-4.md)
-        - [72.深入浅出pandas-1](/md/02.编程语言/Python/数据分析/72.深入浅出pandas-1.md)
-        - [73.深入浅出pandas-2](/md/02.编程语言/Python/数据分析/73.深入浅出pandas-2.md)
-        - [74.深入浅出pandas-3](/md/02.编程语言/Python/数据分析/74.深入浅出pandas-3.md)
-        - [75.深入浅出pandas-4](/md/02.编程语言/Python/数据分析/75.深入浅出pandas-4.md)
-        - [76.深入浅出pandas-5](/md/02.编程语言/Python/数据分析/76.深入浅出pandas-5.md)
-        - [77.深入浅出pandas-6](/md/02.编程语言/Python/数据分析/77.深入浅出pandas-6.md)
-        - [78.数据可视化-1](/md/02.编程语言/Python/数据分析/78.数据可视化-1.md)
-        - [79.数据可视化-2](/md/02.编程语言/Python/数据分析/79.数据可视化-2.md)
-        - [80.数据可视化-3](/md/02.编程语言/Python/数据分析/80.数据可视化-3.md)
-      * res
-      - [环境搭建](/md/02.编程语言/Python/环境搭建.md)
+    - [数据分析](/md/02.编程语言/Python/数据分析/_sidebar.md)
+    * 环境
+        - [环境搭建](/md/02.编程语言/Python/环境/环境搭建.md)
   * Vue
       - [埋点追踪](/md/02.编程语言/Vue/埋点追踪.md)
 * 03.数据组件
