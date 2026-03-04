@@ -1,20 +1,24 @@
 ## uv
 
-安装
+### Linux 安装 uv
 
-Linux:
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 
- 	curl -LsSf https://astral.sh/uv/install.sh | sh
+### windows 安装 uv
 
-windows:
+```bash
+winget install uv 
 
-​	winget install uv 
-
-​	或者 irm https://astral.sh/uv/install.ps1 | iex
-
+# 或者 irm https://astral.sh/uv/install.ps1 | iex
+```
 
 
-### 1. 管理 Python 版本
+
+### uv 环境管理
+
+#### 管理 Python 版本
 
 ```bash
 uv python list
@@ -26,9 +30,7 @@ uv python install 3.11.6
 uv python default 3.12
 ```
 
-
-
-## 2. 管理虚拟环境
+#### 管理虚拟环境
 
 ```bash
 # 创建名为 .venv 的虚拟环境（默认）
@@ -44,9 +46,7 @@ source .venv/bin/activate
 uv python pin 3.11
 ```
 
-
-
-## 3. 包管理
+#### 包管理
 
 ```bash
 # 安装最新版本
@@ -67,7 +67,7 @@ uv pip freeze --production > requirements.txt
 
 
 
-## 4. 项目管理
+### 项目管理
 
 初始化一个新项目：
 
