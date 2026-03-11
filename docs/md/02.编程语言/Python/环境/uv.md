@@ -100,3 +100,15 @@ uv sync
 > [tool.uv]
 > index-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 > ```
+
+
+
+### 常见问题
+
+- 在 Windows 上使用 uv 时的 hardlink 警告：Failed to hardlink files; falling back to full copy
+
+  硬链接 在 Windows 上有一个**硬性前提**: **源文件和目标文件必须位于同一个文件系统（同一个盘符）**
+
+  uv 默认缓存目录在：C:\Users\<用户名>\AppData\Local\uv\cache (uv cache dir)
+
+  `UV_CACHE_DIR` -> D 即可
