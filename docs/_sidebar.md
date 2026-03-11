@@ -43,7 +43,9 @@
   * Python
     - [数据分析](/md/02.编程语言/Python/数据分析/_sidebar.md)
     * 环境
-        - [环境搭建](/md/02.编程语言/Python/环境/环境搭建.md)
+        - [conda](/md/02.编程语言/Python/环境/conda.md)
+        - [requirements](/md/02.编程语言/Python/环境/requirements.md)
+        - [uv](/md/02.编程语言/Python/环境/uv.md)
   * Vue
       - [埋点追踪](/md/02.编程语言/Vue/埋点追踪.md)
 * 03.数据组件
@@ -60,5 +62,8 @@
 * 05.杂项
     - [github-pages&actions](/md/05.杂项/github-pages&actions.md)
     - [jenkins-cicd](/md/05.杂项/jenkins-cicd.md)
-    - [神经网络扫盲](/md/05.杂项/神经网络扫盲.md)
     - [锂电池背景知识](/md/05.杂项/锂电池背景知识.md)
+* 06.LLM
+    - [Cookbook笔记](/md/06.LLM/Cookbook笔记.md)
+    - [TODO](/md/06.LLM/TODO.md)
+    - [神经网络扫盲](/md/06.LLM/神经网络扫盲.md)
