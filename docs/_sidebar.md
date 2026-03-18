@@ -47,6 +47,7 @@
         - [requirements](/md/02.编程语言/Python/环境/requirements.md)
         - [uv](/md/02.编程语言/Python/环境/uv.md)
   * Vue
+      - [iframe](/md/02.编程语言/Vue/iframe.md)
       - [埋点追踪](/md/02.编程语言/Vue/埋点追踪.md)
 * 03.数据组件
     - [Ado和Jdbc连接字符串](/md/03.数据组件/Ado和Jdbc连接字符串.md)
