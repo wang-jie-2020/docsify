@@ -44,7 +44,7 @@ onMounted(() => {
 
 (1) **script setup**
 
-​	vue3 推荐组合式<script setup>, 避免暴露大量的状态和方法
+​	vue3 推荐组合式script setup, 避免暴露大量的状态和方法
 
 (2) **ref、reactive**, **toRef、toRefs**
 
