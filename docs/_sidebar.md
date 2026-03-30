@@ -56,6 +56,7 @@
     - [DB-字符集和大小写](/md/03.数据组件/DB-字符集和大小写.md)
     - [DB-数据库函数](/md/03.数据组件/DB-数据库函数.md)
     - [MATLAB-Compiler](/md/03.数据组件/MATLAB-Compiler.md)
+    - [RabbitMQ](/md/03.数据组件/RabbitMQ.md)
     - [REDIS](/md/03.数据组件/REDIS.md)
     - [SQL示例-DDL语句](/md/03.数据组件/SQL示例-DDL语句.md)
     - [SQL示例-运维语句](/md/03.数据组件/SQL示例-运维语句.md)
