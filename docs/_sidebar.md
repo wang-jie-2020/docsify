@@ -4,9 +4,13 @@
     - [常用记录](/md/00.常用/常用记录.md)
     - [运维](/md/00.常用/运维.md)
 * 01.编程理论
+    - [23种设计模式](/md/01.编程理论/23种设计模式.md)
+    - [BASE理论](/md/01.编程理论/BASE理论.md)
+    - [CAP理论](/md/01.编程理论/CAP理论.md)
     - [GIT管理](/md/01.编程理论/GIT管理.md)
     - [分布式事务](/md/01.编程理论/分布式事务.md)
     - [开源协议](/md/01.编程理论/开源协议.md)
+    - [程序设计六大原则](/md/01.编程理论/程序设计六大原则.md)
     - [雪花](/md/01.编程理论/雪花.md)
 * 02.编程语言
   * CSharp
@@ -67,8 +71,13 @@
 * 05.杂项
     - [github-pages&actions](/md/05.杂项/github-pages&actions.md)
     - [jenkins-cicd](/md/05.杂项/jenkins-cicd.md)
+    - [Linux环境](/md/05.杂项/Linux环境.md)
     - [锂电池背景知识](/md/05.杂项/锂电池背景知识.md)
 * 06.LLM
+  * Article
+      - [Skills和MCP的区别及各自的应用场景](/md/06.LLM/Article/Skills和MCP的区别及各自的应用场景.md)
+      - [神经网络扫盲](/md/06.LLM/Article/神经网络扫盲.md)
     - [Cookbook笔记](/md/06.LLM/Cookbook笔记.md)
     - [TODO](/md/06.LLM/TODO.md)
-    - [神经网络扫盲](/md/06.LLM/神经网络扫盲.md)
+    - [TODO_指南](/md/06.LLM/TODO_指南.md)
+    - [工具安装和配置](/md/06.LLM/工具安装和配置.md)
