@@ -50,11 +50,7 @@
         - [conda](/md/02.编程语言/Python/环境/conda.md)
         - [requirements](/md/02.编程语言/Python/环境/requirements.md)
         - [uv](/md/02.编程语言/Python/环境/uv.md)
-  * Vue
-      - [iframe](/md/02.编程语言/Vue/iframe.md)
-      - [js](/md/02.编程语言/Vue/js.md)
-      - [vue3](/md/02.编程语言/Vue/vue3.md)
-      - [埋点追踪](/md/02.编程语言/Vue/埋点追踪.md)
+  - [Vue](/md/02.编程语言/Vue/_sidebar.md)
 * 03.数据组件
     - [Ado和Jdbc连接字符串](/md/03.数据组件/Ado和Jdbc连接字符串.md)
     - [DB-字符集和大小写](/md/03.数据组件/DB-字符集和大小写.md)
@@ -66,8 +62,7 @@
     - [SQL示例-DDL语句](/md/03.数据组件/SQL示例-DDL语句.md)
     - [SQL示例-运维语句](/md/03.数据组件/SQL示例-运维语句.md)
     - [运维示例-PG的Partition](/md/03.数据组件/运维示例-PG的Partition.md)
-* 04.代码片段
-    - [MPJ](/md/04.代码片段/MPJ.md)
+- [04.代码片段](/md/04.代码片段/_sidebar.md)
 * 05.杂项
     - [github-pages&actions](/md/05.杂项/github-pages&actions.md)
     - [jenkins-cicd](/md/05.杂项/jenkins-cicd.md)
@@ -79,5 +74,4 @@
       - [神经网络扫盲](/md/06.LLM/Article/神经网络扫盲.md)
     - [Cookbook笔记](/md/06.LLM/Cookbook笔记.md)
     - [TODO](/md/06.LLM/TODO.md)
-    - [TODO_指南](/md/06.LLM/TODO_指南.md)
     - [工具安装和配置](/md/06.LLM/工具安装和配置.md)
