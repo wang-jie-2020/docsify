@@ -70,11 +70,9 @@
     - [MacOS快捷键](/md/05.杂项/MacOS快捷键.md)
     - [锂电池背景知识](/md/05.杂项/锂电池背景知识.md)
 * 06.LLM
-  * Article
-      - [Skills和MCP的区别及各自的应用场景](/md/06.LLM/Article/Skills和MCP的区别及各自的应用场景.md)
-      - [神经网络扫盲](/md/06.LLM/Article/神经网络扫盲.md)
+    - [01.神经网络扫盲](/md/06.LLM/01.神经网络扫盲.md)
+    - [Chat Completions API 详解](/md/06.LLM/Chat Completions API 详解.md)
     - [NoteBook](/md/06.LLM/NoteBook.md)
-  * NoteBook示例
-      - [Chat Completions API 详解](/md/06.LLM/NoteBook示例/Chat Completions API 详解.md)
+    - [Skills和MCP的区别及各自的应用场景](/md/06.LLM/Skills和MCP的区别及各自的应用场景.md)
     - [TODO](/md/06.LLM/TODO.md)
     - [工具安装和配置](/md/06.LLM/工具安装和配置.md)
