@@ -1,0 +1,66 @@
+var sidebarTxt = '* [首页](/)\n';
+var path = require('path');
+// var curPath = path.resolve('./');
+// var contentPath = path.join(curPath);
+
+var curPath = path.resolve('../../../');
+var contentPath = path.resolve('./');
+
+function walkSync(currentDirPath, prefixBlank, callback) {
+    var fs = require('fs'),
+        path = require('path');
+    fs.readdirSync(currentDirPath).forEach(function (name) {
+        var filePath = path.join(currentDirPath, name);
+        var stat = fs.statSync(filePath);
+        if (stat.isFile()) {
+            callback(filePath, stat);
+        } else if (stat.isDirectory() && ".git" != path.basename(filePath)) {    // && '_' !== path.basename(filePath).slice(0, 1))
+
+            // 如果文件夹下已经有了则不再生成
+            var sidebarPath = path.join(filePath, '_sidebar.md');
+            if (fs.existsSync(sidebarPath, fs.constants.F_OK)) {
+                sidebarTxt += prefixBlank + '- [' + path.basename(filePath) + '](' + sidebarPath.substr(curPath.length).replace(/\\/g, '/') + ')\n';
+                return;
+            }
+
+            sidebarTxt += prefixBlank + '* ' + path.basename(filePath) + '\n';
+            walkSync(filePath, prefixBlank + '  ', callback);
+        }
+    });
+}
+
+walkSync(contentPath, '', function (filePath, stat) {
+    if (".md" == path.extname(filePath).toLowerCase()
+        && '_' != path.basename(filePath).substr(0, 1)
+        && 'README.md' != path.basename(filePath)) {
+        var relativeFilePath = filePath.substr(curPath.length);
+        //console.log("file:"+ path.basename(filePath).slice(1));
+        //var itemText = relativeFilePath.substr(1, relativeFilePath.length - 4);
+
+        var itemText1 = filePath.substr(contentPath.length);
+        var itemText2 = itemText1.substr(1, itemText1.length - 4);
+        var itemText = itemText2;
+        while (itemText.indexOf(path.sep) > 0) {
+            itemText = itemText.substr(itemText.indexOf(path.sep) + 1);
+            sidebarTxt += '  ';
+        }
+
+        sidebarTxt += '- [' + itemText + '](' + relativeFilePath.replace(/\\/g, '/') + ')\n';
+
+    }
+    //console.log("file:"+ +path.extname(filePath));
+});
+
+var path = require('path');
+var fs = require('fs');
+fs.copyFile(path.resolve('./') + "/_sidebar.md", path.resolve('./') + "/_sidebar.md", function (err) {
+    if (err) throw new Error('something wrong was happended')
+});
+//console.log(path.resolve('./')+"/_sidebar.md");
+
+console.log(sidebarTxt);
+fs.writeFile(path.resolve('./') + '/_sidebar.md', sidebarTxt, function (err) {
+    if (err) {
+        console.error(err);
+    }
+});
