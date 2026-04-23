@@ -4,8 +4,9 @@
   - [JDK-02.集合](/md/02.编程语言/Java/基本概念/JDK-02.集合.md)
   - [JDK-03.IO流](/md/02.编程语言/Java/基本概念/JDK-03.IO流.md)
   - [JDK-04.泛型](/md/02.编程语言/Java/基本概念/JDK-04.泛型.md)
-  - [JDK-05.线程](/md/02.编程语言/Java/基本概念/JDK-05.线程.md)
   - [JDK-05.线程CompletableFuture](/md/02.编程语言/Java/基本概念/JDK-05.线程CompletableFuture.md)
+  - [JDK-05.线程同步](/md/02.编程语言/Java/基本概念/JDK-05.线程同步.md)
+  - [JDK-05.线程模型](/md/02.编程语言/Java/基本概念/JDK-05.线程模型.md)
   - [JDK-06.Enum](/md/02.编程语言/Java/基本概念/JDK-06.Enum.md)
   - [Maven](/md/02.编程语言/Java/基本概念/Maven.md)
   - [ORM-01.JDBC概述](/md/02.编程语言/Java/基本概念/ORM-01.JDBC概述.md)
@@ -27,4 +28,3 @@
   - [包-02.obj-mapping](/md/02.编程语言/Java/基本概念/包-02.obj-mapping.md)
   - [包-03.Redis](/md/02.编程语言/Java/基本概念/包-03.Redis.md)
   - [包-04.open-api](/md/02.编程语言/Java/基本概念/包-04.open-api.md)
-* 整合
