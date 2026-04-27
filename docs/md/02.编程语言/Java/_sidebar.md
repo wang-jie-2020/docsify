@@ -4,7 +4,6 @@
   - [JDK-02.集合](/md/02.编程语言/Java/基本概念/JDK-02.集合.md)
   - [JDK-03.IO流](/md/02.编程语言/Java/基本概念/JDK-03.IO流.md)
   - [JDK-04.泛型](/md/02.编程语言/Java/基本概念/JDK-04.泛型.md)
-  - [JDK-05.线程CompletableFuture](/md/02.编程语言/Java/基本概念/JDK-05.线程CompletableFuture.md)
   - [JDK-05.线程同步](/md/02.编程语言/Java/基本概念/JDK-05.线程同步.md)
   - [JDK-05.线程模型](/md/02.编程语言/Java/基本概念/JDK-05.线程模型.md)
   - [JDK-06.Enum](/md/02.编程语言/Java/基本概念/JDK-06.Enum.md)
@@ -17,7 +16,7 @@
   - [Spring-01.容器和上下文](/md/02.编程语言/Java/基本概念/Spring-01.容器和上下文.md)
   - [Spring-02.Aspect](/md/02.编程语言/Java/基本概念/Spring-02.Aspect.md)
   - [Spring-03.环境和配置](/md/02.编程语言/Java/基本概念/Spring-03.环境和配置.md)
-  - [Spring-04.默认线程池](/md/02.编程语言/Java/基本概念/Spring-04.默认线程池.md)
+  - [Spring-04.任务执行和调度](/md/02.编程语言/Java/基本概念/Spring-04.任务执行和调度.md)
   - [Spring-05.过滤和拦截](/md/02.编程语言/Java/基本概念/Spring-05.过滤和拦截.md)
   - [Spring-06.静态资源](/md/02.编程语言/Java/基本概念/Spring-06.静态资源.md)
   - [Spring-07.i18n](/md/02.编程语言/Java/基本概念/Spring-07.i18n.md)
@@ -28,3 +27,4 @@
   - [包-02.obj-mapping](/md/02.编程语言/Java/基本概念/包-02.obj-mapping.md)
   - [包-03.Redis](/md/02.编程语言/Java/基本概念/包-03.Redis.md)
   - [包-04.open-api](/md/02.编程语言/Java/基本概念/包-04.open-api.md)
+* 整合

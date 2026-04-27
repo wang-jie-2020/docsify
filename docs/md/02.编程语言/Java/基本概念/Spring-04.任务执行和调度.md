@@ -1,10 +1,10 @@
-## 线程池
+# 任务执行和调度
 
-*@EnableAsync 注解是必要的, 必须显式声明. 但某些资料中所述它非全局标志是不对的(v2.5+), 也许是版本升级*
+## Spring做了什么
 
-*@Async 注解的限制如同Aspect(如代理等), 它会影响代码结构, 现在再看若依方式似乎更好*
+(1) 将线程Executor封装Bean, 可以装配
 
-*"@Async注解默认SimpleAsyncTaskExecutor" 的说法是过去时, AI给的回答是2.1之后默认是ThreadPoolTaskExecutor, 打印线程名时还是[task-%d]存疑*
+(2) 提供@Async注解, 标记异步任务
 
 
 
@@ -14,11 +14,19 @@
 2. 配置一个TaskExecutor的Bean (这个步骤中有建议实现AsyncConfigurer或继承AsyncConfigurerSupport, 未去再细查)
 3. 将多线程执行的方法与调用类隔离, 注解@Async(留空 或者 具名执行器名称)
 
+注意点:
+
+*@EnableAsync 注解是必要的, 必须显式声明. 但某些资料中所述它非全局标志是不对的(v2.5+), 也许是版本升级*
+
+*@Async 注解的限制如同Aspect(如代理等), 它会影响代码结构, 现在再看若依方式似乎更好*
+
+*"@Async注解默认SimpleAsyncTaskExecutor" 的说法是过去时, AI给的回答是2.1之后默认是ThreadPoolTaskExecutor, 打印线程名时还是[task-%d]存疑*
 
 
-![image-20251105132322630](https://raw.gitcode.com/qq_36179938/images/raw/main/image-20251105132322630.png)
 
+### Executor
 
+配置方式:
 
 ```yml
 spring:
@@ -32,7 +40,7 @@ spring:
         queue-capacity: 500
 ```
 
-
+编码方式:
 
 ```java
 @Bean(name = "threadPoolTaskExecutor")
