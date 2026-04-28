@@ -19,10 +19,12 @@
 - [04.代码片段](/md/04.代码片段/_sidebar.md)
 - [05.杂项](/md/05.杂项/_sidebar.md)
 * 06.LLM
-    - [01.神经网络扫盲](/md/06.LLM/01.神经网络扫盲.md)
-    - [Chat Completions API 详解](/md/06.LLM/Chat Completions API 详解.md)
-    - [NoteBook](/md/06.LLM/NoteBook.md)
-    - [OpenCode](/md/06.LLM/OpenCode.md)
-    - [Skills和MCP的区别及各自的应用场景](/md/06.LLM/Skills和MCP的区别及各自的应用场景.md)
-    - [TODO](/md/06.LLM/TODO.md)
-    - [工具安装和配置](/md/06.LLM/工具安装和配置.md)
+  * 实践
+      - [TODO](/md/06.LLM/实践/TODO.md)
+      - [VideCoding](/md/06.LLM/实践/VideCoding.md)
+      - [工具安装和配置](/md/06.LLM/实践/工具安装和配置.md)
+  * 理论和文章
+      - [API详解](/md/06.LLM/理论和文章/API详解.md)
+      - [Skills vs MCP](/md/06.LLM/理论和文章/Skills vs MCP.md)
+      - [工具书](/md/06.LLM/理论和文章/工具书.md)
+      - [神经网络扫盲](/md/06.LLM/理论和文章/神经网络扫盲.md)
