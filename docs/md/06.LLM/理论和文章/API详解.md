@@ -16,10 +16,6 @@
 | ---------- | ----- | ---------------------------------------------- |
 | `messages` | array | 对话消息数组，每个元素包含 `role` 和 `content` |
 
-**python**
-
-复制
-
 
 
 ```python
@@ -41,12 +37,6 @@ messages = [
 | `developer` | 开发者指令（替代 system，部分模型支持） |
 
 **content 类型**：
-
-**python**
-
-复制
-
-
 
 ```python
 # 文本
@@ -94,10 +84,6 @@ messages = [
 ## 📤 响应参数（Response）
 
 ### 完整响应结构
-
-**json**
-
-复制
 
 
 
@@ -160,10 +146,6 @@ messages = [
 
 ## 🔄 流式响应（Streaming）
 
-**python**
-
-复制
-
 
 
 ```python
@@ -183,12 +165,6 @@ for chunk in stream:
 
 ### 流式返回的 chunk 结构
 
-**json**
-
-复制
-
-
-
 ```json
 // 第一块
 {"id":"chatcmpl-xxx","choices":[{"index":0,"delta":{"role":"assistant"},"finish_reason":null}],"created":123,"model":"gpt-4o","service_tier":"auto","system_fingerprint":"fp_xxx","usage":null}
@@ -205,12 +181,6 @@ for chunk in stream:
 ## 💡 常见使用示例
 
 ### 基础调用
-
-**python**
-
-复制
-
-
 
 ```python
 from openai import OpenAI
@@ -231,12 +201,6 @@ print(response.choices[0].message.content)
 
 ### 结构化输出（JSON Mode）
 
-**python**
-
-复制
-
-
-
 ```python
 response = client.chat.completions.create(
     model="gpt-4o",
@@ -256,12 +220,6 @@ data = json.loads(response.choices[0].message.content)
 ```
 
 ### 工具调用（Function Calling）
-
-**python**
-
-复制
-
-
 
 ```python
 # 1. 定义工具
@@ -296,12 +254,6 @@ func_args = json.loads(tool_call.function.arguments)
 ```
 
 ### 多模态（图片输入）
-
-**python**
-
-复制
-
-
 
 ```python
 response = client.chat.completions.create(
