@@ -1,3 +1,22 @@
+```bash
+npm install --registry=https://registry.npmmirror.com
+```
+
+
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+
+
+```
+git worktree add ../ess-test feature-test
+```
+
+
+
 ## Linux 常用命令
 
 ```bash
