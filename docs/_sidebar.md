@@ -20,11 +20,11 @@
 - [05.杂项](/md/05.杂项/_sidebar.md)
 * 06.LLM
   * 实践
+      - [01.综述](/md/06.LLM/实践/01.综述.md)
       - [TODO](/md/06.LLM/实践/TODO.md)
-      - [VideCoding](/md/06.LLM/实践/VideCoding.md)
       - [工具安装和配置](/md/06.LLM/实践/工具安装和配置.md)
-  * 理论和文章
-      - [API详解](/md/06.LLM/理论和文章/API详解.md)
-      - [Skills vs MCP](/md/06.LLM/理论和文章/Skills vs MCP.md)
-      - [工具书](/md/06.LLM/理论和文章/工具书.md)
-      - [神经网络扫盲](/md/06.LLM/理论和文章/神经网络扫盲.md)
+  * 资料
+      - [RAG的旧范式](/md/06.LLM/资料/RAG的旧范式.md)
+      - [Skills和MCP](/md/06.LLM/资料/Skills和MCP.md)
+      - [api参数](/md/06.LLM/资料/api参数.md)
+      - [神经网络扫盲](/md/06.LLM/资料/神经网络扫盲.md)
