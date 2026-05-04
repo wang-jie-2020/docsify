@@ -1,6 +1,6 @@
 * [首页](/)
-- [github-pages&actions](/md/05.杂项/github-pages&actions.md)
-- [jenkins-cicd](/md/05.杂项/jenkins-cicd.md)
 - [Linux环境](/md/05.杂项/Linux环境.md)
 - [MacOS快捷键](/md/05.杂项/MacOS快捷键.md)
+- [github-pages&actions](/md/05.杂项/github-pages&actions.md)
+- [jenkins-cicd](/md/05.杂项/jenkins-cicd.md)
 - [锂电池背景知识](/md/05.杂项/锂电池背景知识.md)
