@@ -2,7 +2,7 @@
 
 GitHub 每周热门
 
-SKILLHUB
+SKILLHUB   npx skills是什么
 
 
 
