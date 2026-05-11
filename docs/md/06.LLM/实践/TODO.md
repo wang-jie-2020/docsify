@@ -1,22 +1,18 @@
-快速打开一些目录
-
-
-
 让我的doc仓库自动上传
-
-
-
-MCP 和 SKILLHUB
-
-
 
 GitHub 每周热门
 
+SKILLHUB
 
 
 
 
 
+
+
+MCP
+
+wenzi -> 图 流程图 效果图
 
 ### 一、提示词工程、上下文工程、Harness...
 
