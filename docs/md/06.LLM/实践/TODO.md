@@ -1,3 +1,17 @@
+快速打开一些目录
+
+
+
+让我的doc仓库自动上传
+
+
+
+MCP 和 SKILLHUB
+
+
+
+GitHub 每周热门
+
 
 
 
@@ -72,4 +86,20 @@ MCP、ACP、A2A
 关键步骤怎么校验
 
 失败之后怎么恢复
+
+
+
+通过一些项目增强
+
+MCP 或者 子Agent 去替代SKILLS技能也许符合习惯
+
+替代我进行操作的权限, 在信息系统上应该如何做
+
+自定义MCP SERVER 或者 SKILLS SERVER, 通过什么做, PLUGIN?
+
+
+
+
+
+
 
