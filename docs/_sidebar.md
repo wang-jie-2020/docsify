@@ -8,23 +8,27 @@
 * 02.编程语言
   - [CSharp](/md/02.编程语言/CSharp/_sidebar.md)
   - [Java](/md/02.编程语言/Java/_sidebar.md)
+  - [nodejs](/md/02.编程语言/nodejs/_sidebar.md)
   * Python
     - [数据分析](/md/02.编程语言/Python/数据分析/_sidebar.md)
     * 环境
         - [conda](/md/02.编程语言/Python/环境/conda.md)
         - [requirements](/md/02.编程语言/Python/环境/requirements.md)
         - [uv](/md/02.编程语言/Python/环境/uv.md)
-  - [Vue](/md/02.编程语言/Vue/_sidebar.md)
 - [03.数据组件](/md/03.数据组件/_sidebar.md)
 - [04.代码片段](/md/04.代码片段/_sidebar.md)
 - [05.杂项](/md/05.杂项/_sidebar.md)
 * 06.LLM
   * 实践
-      - [01.综述](/md/06.LLM/实践/01.综述.md)
+      - [CC-01.随记](/md/06.LLM/实践/CC-01.随记.md)
+      - [CC-02.过程](/md/06.LLM/实践/CC-02.过程.md)
+      - [CC-md结构](/md/06.LLM/实践/CC-md结构.md)
       - [TODO](/md/06.LLM/实践/TODO.md)
-      - [工具安装和配置](/md/06.LLM/实践/工具安装和配置.md)
+      - [其他工具](/md/06.LLM/实践/其他工具.md)
   * 资料
+      - [CC-hooks](/md/06.LLM/资料/CC-hooks.md)
+      - [Git-hooks](/md/06.LLM/资料/Git-hooks.md)
       - [RAG的旧范式](/md/06.LLM/资料/RAG的旧范式.md)
       - [Skills和MCP](/md/06.LLM/资料/Skills和MCP.md)
-      - [api参数](/md/06.LLM/资料/api参数.md)
+      - [对话补全api参数](/md/06.LLM/资料/对话补全api参数.md)
       - [神经网络扫盲](/md/06.LLM/资料/神经网络扫盲.md)
