@@ -20,9 +20,9 @@
 - [05.杂项](/md/05.杂项/_sidebar.md)
 * 06.LLM
   * 实践
-      - [CC-01.随记](/md/06.LLM/实践/CC-01.随记.md)
-      - [CC-02.过程](/md/06.LLM/实践/CC-02.过程.md)
-      - [CC-md结构](/md/06.LLM/实践/CC-md结构.md)
+      - [CC-01.md结构](/md/06.LLM/实践/CC-01.md结构.md)
+      - [CC-02.实践](/md/06.LLM/实践/CC-02.实践.md)
+      - [CC-03.随记](/md/06.LLM/实践/CC-03.随记.md)
       - [TODO](/md/06.LLM/实践/TODO.md)
       - [其他工具](/md/06.LLM/实践/其他工具.md)
   * 资料
