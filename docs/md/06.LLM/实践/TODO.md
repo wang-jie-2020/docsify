@@ -3,9 +3,6 @@
 3. 动态规划
 4. Nanobanana
 5. 实际问题, 频繁打开文件夹、打开终端窗口, 定义一些快捷操作 
-6. cc 美化桌面
-7. 前端 -- news-global
-8. 可视化知识  
 9. 每一次都要手动落下来, 方便下次在查?
 10. 小程序、个人订阅号
 
@@ -75,15 +72,3 @@ MCP、ACP、A2A
 失败之后怎么恢复
 
 MCP 或者 子Agent 去替代SKILLS技能也许符合习惯
-
-
-
-![image-20260526122703950](C:/Users/jie.wang21/AppData/Roaming/Typora/typora-user-images/image-20260526122703950.png)
-
-![image-20260526123059192](C:/Users/jie.wang21/AppData/Roaming/Typora/typora-user-images/image-20260526123059192.png)
-
-
-
-![image-20260526123832471](C:/Users/jie.wang21/AppData/Roaming/Typora/typora-user-images/image-20260526123832471.png)
-
-![image-20260526124013360](C:/Users/jie.wang21/AppData/Roaming/Typora/typora-user-images/image-20260526124013360.png)
