@@ -11,8 +11,6 @@
 
 
 
-
-
 ### 二、RAG
 
 模型知识过时/不足已经不再是主要问题 -> (1) 训练规模增大 (2) 网络搜索工具 (3) 更长的上下文
@@ -80,9 +78,12 @@ MCP 或者 子Agent 去替代SKILLS技能也许符合习惯
 
 
 
+![image-20260526122703950](C:/Users/jie.wang21/AppData/Roaming/Typora/typora-user-images/image-20260526122703950.png)
+
+![image-20260526123059192](C:/Users/jie.wang21/AppData/Roaming/Typora/typora-user-images/image-20260526123059192.png)
 
 
 
+![image-20260526123832471](C:/Users/jie.wang21/AppData/Roaming/Typora/typora-user-images/image-20260526123832471.png)
 
-
-
+![image-20260526124013360](C:/Users/jie.wang21/AppData/Roaming/Typora/typora-user-images/image-20260526124013360.png)
