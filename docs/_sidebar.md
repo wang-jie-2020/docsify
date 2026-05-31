@@ -1,33 +1,12 @@
 * [首页](/)
-* 00.常用
-    - [CMD](/md/00.常用/CMD.md)
-    - [CSharp](/md/00.常用/CSharp.md)
-    - [Java](/md/00.常用/Java.md)
-    - [其他](/md/00.常用/其他.md)
 - [01.编程理论](/md/01.编程理论/_sidebar.md)
 * 02.编程语言
   - [CSharp](/md/02.编程语言/CSharp/_sidebar.md)
   - [Java](/md/02.编程语言/Java/_sidebar.md)
   - [nodejs](/md/02.编程语言/nodejs/_sidebar.md)
-  * Python
-    - [数据分析](/md/02.编程语言/Python/数据分析/_sidebar.md)
-    * 环境
-        - [conda](/md/02.编程语言/Python/环境/conda.md)
-        - [requirements](/md/02.编程语言/Python/环境/requirements.md)
-        - [uv](/md/02.编程语言/Python/环境/uv.md)
-- [03.数据组件](/md/03.数据组件/_sidebar.md)
-- [04.代码片段](/md/04.代码片段/_sidebar.md)
+  - [Python](/md/02.编程语言/Python/_sidebar.md)
+  - [常见问题](/md/02.编程语言/常见问题/_sidebar.md)
+- [03.代码片段](/md/03.代码片段/_sidebar.md)
+- [04.数据组件](/md/04.数据组件/_sidebar.md)
 - [05.杂项](/md/05.杂项/_sidebar.md)
-* 06.LLM
-  * 实践
-      - [CC-01.md结构](/md/06.LLM/实践/CC-01.md结构.md)
-      - [CC-02.实践](/md/06.LLM/实践/CC-02.实践.md)
-      - [TODO](/md/06.LLM/实践/TODO.md)
-      - [其他工具](/md/06.LLM/实践/其他工具.md)
-  * 资料
-      - [CC-hooks](/md/06.LLM/资料/CC-hooks.md)
-      - [Git-hooks](/md/06.LLM/资料/Git-hooks.md)
-      - [RAG的旧范式](/md/06.LLM/资料/RAG的旧范式.md)
-      - [Skills和MCP](/md/06.LLM/资料/Skills和MCP.md)
-      - [对话补全api参数](/md/06.LLM/资料/对话补全api参数.md)
-      - [神经网络扫盲](/md/06.LLM/资料/神经网络扫盲.md)
+- [06.LLM](/md/06.LLM/_sidebar.md)
