@@ -1,11 +1,11 @@
 * [首页](/)
 * 实践
-  - [CC-01.md结构](/md/06.LLM/实践/CC-01.md结构.md)
-  - [CC-02.实践](/md/06.LLM/实践/CC-02.实践.md)
   - [TODO](/md/06.LLM/实践/TODO.md)
-  - [其他工具](/md/06.LLM/实践/其他工具.md)
+  - [实践总结](/md/06.LLM/实践/实践总结.md)
+  - [配套工具](/md/06.LLM/实践/配套工具.md)
 * 资料
   - [CC-hooks](/md/06.LLM/资料/CC-hooks.md)
+  - [CC-md结构](/md/06.LLM/资料/CC-md结构.md)
   - [Git-hooks](/md/06.LLM/资料/Git-hooks.md)
   - [RAG的旧范式](/md/06.LLM/资料/RAG的旧范式.md)
   - [Skills和MCP](/md/06.LLM/资料/Skills和MCP.md)
