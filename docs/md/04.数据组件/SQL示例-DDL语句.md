@@ -53,6 +53,14 @@
 
 
 
+## 不同DB间的查询分页
+
+ORACLE/SQLSERVER: OFFSET 0 ROWS FETCH NEXT 10 ROWS ONLY;
+
+MYSQL/PGSQL: LIMIT 0,10;
+
+
+
 ## ORACLE窗口函数示例
 
 ```sql
@@ -108,7 +116,7 @@ GROUP BY APPLYID;
 
 
 
-## 时间聚合
+## 时间聚合函数
 
 豆包整理了下:
 
@@ -124,4 +132,3 @@ GROUP BY APPLYID;
 某些场景考虑字符串格式化也可以, 
 
 PostgreSQL、ORACLE: TO_CHAR(create_time, 'yyyy-mm')
-
