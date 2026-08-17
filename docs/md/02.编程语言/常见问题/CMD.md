@@ -17,6 +17,19 @@ git worktree add ../ess-test feature-test
 
 
 
+## maven
+
+```xml
+<mirror>  
+    <id>nexus</id>  
+    <mirrorOf>*,!cordys-public</mirrorOf>
+    <name>maven-public</name>  
+    <url>http://10.206.121.19:8082/repository/maven-public/</url>  
+</mirror>
+```
+
+
+
 ## Linux 常用命令
 
 ```bash
