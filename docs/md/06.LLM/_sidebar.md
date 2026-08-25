@@ -1,7 +1,5 @@
 * [首页](/)
 * 实践
-  - [TODO](/md/06.LLM/实践/TODO.md)
-  - [实践总结](/md/06.LLM/实践/实践总结.md)
   - [配套工具](/md/06.LLM/实践/配套工具.md)
 * 资料
   - [CC-hooks](/md/06.LLM/资料/CC-hooks.md)
