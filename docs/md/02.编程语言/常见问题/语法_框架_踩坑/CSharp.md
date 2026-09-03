@@ -1,15 +1,3 @@
-## nginx之Forward头
-
-http规范里对请求头的定义、兼容废弃等标志的很清楚, 按需再查吧.
-
-这里针对的是经过Nginx转发之后的Scheme、Host等进行标识和转存, NetCore中已有相关集成
-
-    proxy_set_header X-Forwarded-Host $the_host/onlyoffice;
-    proxy_set_header X-Forwarded-Proto $the_scheme;
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-
-
-
 ## C# signalR底板
 
 底板针对的也就是连接数量太多增加了集群负载均衡之后进行的多server同步发送，但似乎有点难以处理逻辑（指的是由自主控制的）
