@@ -1,13 +1,17 @@
-## GIT
+# GIT
+
+### tag
 
 ```bash
 git tag v1.0.0
 git push origin v1.0.0
-
-git worktree add ../test feature-test
 ```
 
+### worktree
 
+```bash
+git worktree add ../test feature-test
+```
 
 ### sub-module
 

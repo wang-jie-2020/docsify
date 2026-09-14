@@ -1,12 +1,14 @@
 ### WSL中Nacos、MySQL的访问
 
-*在 windows-wsl 中需要 nacos、mysql，在现有环境下通过创建同一个网络的模式*
+*在 windows-wsl 中需要 nacos、mysql，在现有环境下通过创建同一个网络的模式(非一个dockercompose)*
 
 
 
 *一、创建 docker 网络*
 
 docker network create dev
+
+
 
 *二、container 中指定 networks*
 
@@ -26,7 +28,9 @@ services:
       - dev
 ```
 
-*三、nacos 的配置中修改 url*
+
+
+三、nacos 的配置中修改 url*
 
 ```yaml
 db.url.0=jdbc:mysql://mysql:3306/ry-config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
