@@ -1,4 +1,4 @@
-## Java Jar包参数
+## Jar包参数
 
 ```bash
 @echo off
@@ -17,7 +17,10 @@ cd bin
 pause
 ```
 
--Xms分配堆最小内存，默认为物理内存的1/64；-Xmx分配最大内存，默认为物理内存的1/4。
+-Xms分配堆最小内存，默认为物理内存的1/64；
+
+-Xmx分配最大内存，默认为物理内存的1/4。
+
 非堆内存分配用-XX:PermSize和-XX:MaxPermSize
 
 -XX:PermSize分配非堆最小内存，默认为物理内存的1/64；-XX:MaxPermSize分配最大内存，默认为物理内存的1/4。
@@ -38,6 +41,8 @@ pause
 ```
 
 
+
+### 诊断
 
 ```bash
 # 1. 查找目标Java进程PID

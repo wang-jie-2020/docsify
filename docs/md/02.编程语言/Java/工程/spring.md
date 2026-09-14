@@ -1,3 +1,25 @@
+## 项目骨架
+
+1. 包的结构、pom依赖、Maven的原理
+2. 日志、配置
+3. 运行环境切换?
+4. api (Swagger / OpenAPI)
+5. 全局包装、全局异常
+6. 参数校验
+7. Mybatis
+8. RBAC认证、鉴权
+9. 密码加密
+10. 当前用户上下文
+11. 文件上传 / 下载
+12. Excel 导入 / 导出，EasyExcel 或类似工具
+13. 拦截器 / 过滤器
+14. 树形结构处理（递归 / 树结构组装）
+15. Redis 缓存
+16. AOP日志
+
+
+
+
 
 ## Java Spring
 
@@ -64,3 +86,43 @@ private HttpServletRequest request; // 自动注入 request 对象
 6. Fiegn-JSON & 请求压缩时会有非法字符错误
 
    https://blog.csdn.net/qq_33286757/article/details/147768083 
+
+
+
+
+
+1. mybatis-plus java8 最高是3.5.7，虽然有3.5.8+的兼容方案但是似乎并不太合适；3.5.3.2是一个特殊版本，之后包含了大量了Utils丢失，并且这个版本mapper没有批量操作。
+
+   
+
+1. feign中的default 超时配置无法通过命令行参数覆盖，只能修改nacos；但是如果是具名的client就可以覆盖
+
+feign.client.config.default.read-timeout no
+
+feign.client.config.xxx.read-timeout  yes
+
+
+
+1. Maven Wrapper（mvnw、mvnw.cmd），项目中固定并自动使用指定版本的 Maven
+2. 问题记录：Feign 配置的超时时间
+
+（1）代码中 FeignClient 的 Configuration.Class 无效，但是 LogLevel 生效
+
+（2）通过覆盖 nacos 中的 default 配置解决问题
+
+```yml
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 100000
+        readTimeout: 600000
+  compression:
+    request:
+      enabled: false    # 关闭请求压缩
+    response:
+      enabled: false    # 关闭响应压缩
+```
+
+
+
