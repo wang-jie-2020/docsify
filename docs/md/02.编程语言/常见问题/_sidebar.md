@@ -2,7 +2,6 @@
 * 环境_工具_命令
   - [docker之容器网络访问](/md/02.编程语言/常见问题/环境_工具_命令/docker之容器网络访问.md)
   - [git](/md/02.编程语言/常见问题/环境_工具_命令/git.md)
-  - [maven配置](/md/02.编程语言/常见问题/环境_工具_命令/maven配置.md)
   - [nginx](/md/02.编程语言/常见问题/环境_工具_命令/nginx.md)
   - [nginx之Forward](/md/02.编程语言/常见问题/环境_工具_命令/nginx之Forward.md)
   - [nodejs](/md/02.编程语言/常见问题/环境_工具_命令/nodejs.md)
