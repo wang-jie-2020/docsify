@@ -2,20 +2,20 @@
 
 ### 1. 运行环境
 
-1. IDEA中的 项目结构-项目/模块 的语言级别 经常乱
-2. 未配JAVA_HOME时, AGENT运行测试(MVN命令)运行错误, 推荐JAVA_HOME满足最低要求(也就是8)
-3. Maven(settings.xml) 配置时注意`<mirrorOf>central</mirrorOf>`, 以防有其他仓库
+1. IDEA中的 项目结构-项目/模块 的语言级别
+2. 未配JAVA_HOME时, AGENT运行测试(MVN命令)运行错误, 推荐JAVA_HOME满足最低要求(目前是8)
+3. Maven(settings.xml) 配置时注意`<mirrorOf>central</mirrorOf>`
 3. `mvnw`、`mvnw.cmd` = bash/cmd 脚本, 下载/安装 Maven
-5. POM依赖中SYSTEM 指本地依赖, 示例: `<systemPath>${project.basedir}/lib/faliure_pre.jar</systemPath>``
-6. `maven-compiler-plugin` 默认, `spring-boot-maven-plugin` 最终运行
+5. pom中指定SYSTEM SCOPE指本地依赖, 示例: `<systemPath>${project.basedir}/lib/faliure_pre.jar</systemPath>``
+6. `maven-compiler-plugin` + `spring-boot-maven-plugin`
 
 ### 2. 配置
 
 1. *Nacos > 运行参数 > application-{profile} > bootstrap-{profile} > default*
 
-2. 参数->配置类, `@ConfigurationProperties(prefix = "")`
+2. 到配置类前缀绑定对象: `@ConfigurationProperties(prefix = "")`
 
-3. 附加其他路径的文件: `@PropertySource(value = "classpath:extra.properties")`, XML格式 `@ImportResource`
+3. 附加读非默认路径文件: `@PropertySource(value = "classpath:extra.properties")`, XML格式 `@ImportResource`
 
 4. 环境(spring.profiles)
 
@@ -25,31 +25,36 @@
 
 ## mvc
 
-1. 终结点常见的方式, @RestController / @Controller @ResponseBody / ResponseEntity, 也可通过httpservlet
+1. 终结点
+   1. 常见注解, @RestController
+   2. @Controller @ResponseBody / ResponseEntity
+   3. HttpServlet 对象直接操作
 
 
 2. 参数绑定
    1. 单字段无注解时 = @RequestParam(required = false)
-   2. 对象无注解时 = 平铺
-   3. 对象有@RequestParam注解时, 错误
+   2. 对象无注解时 = 平铺, 有@RequestParam注解时, 错误
    4. @RequestParam 大小写敏感
    5. @RequestParam 范围是 查询参数 / x-form请求体 / form参数
       1. 避免同名参数, `@RequestBody`、`@RequestPart("file")`可以指定绑定来源
-      2. 截断
-
+      2. 有最大长度
+   
 3. 全局异常 `@ControllerAdvice`
 
 4. 参数校验 `@Validated`
 
 5. JSON
-   1. 默认Jackson(jsr310、默认配置), 推荐`Jackson2ObjectMapperBuilderCustomizer`定制项目个性化, `MappingJackson2HttpMessageConverter`和`ObjectMapper`的重写会覆盖掉框架默认值
-   2. 日期、JS精度、科学计数
-   3. 枚举, 默认情况是name字段, 通常都会`@JsonValue`指定
-   4. 注解MixIn
-
+   1. 默认Jackson(jsr310、默认配置)
+   2. 推荐`Jackson2ObjectMapperBuilderCustomizer`定制项目个性化, `MappingJackson2HttpMessageConverter`和`ObjectMapper`的重写会覆盖掉框架默认值
+   3. 日期、JS精度、科学计数
+   4. 枚举默认name, 但通常需`@JsonValue`指定到状态位
+5. 注解MixIn不能操作到基本类型
+   
 6. 上下文
 
-   (1) BeanDefinition -> BeanRegistry -> BeanFactory -> BeanInstance 的时序, 实例Bean时
+   (1) Bean的构造过程是: BeanDefinition -> BeanRegistry -> BeanFactory -> BeanInstance 
+   
+   (2) 实例Bean时的顺序:
 
 ​		构造函数 -> 
 
@@ -71,7 +76,7 @@
 
    (2) classpath的以下路径可直接访问: `/static`、`/public`、`/resources`、`/META-INF/resources`
 
-   (3) 其他物理路径的访问: `WebMvcConfigurer.addResourceHandlers()`
+   (3) 其他物理路径的mapping(比如本地OSS): `WebMvcConfigurer.addResourceHandlers()`
 
 8. Oss
 
@@ -92,6 +97,10 @@
 10. 过滤器、拦截器
 
 11. 国际化
+
+    1. Instant、OffsetDateTime
+    2. LocalDateTime
+    3. ZoneDateTime 不是能够保存的形式
 
 ## MYBATIS
 
@@ -117,7 +126,7 @@ kafka / rabbitmq / rocketmq
 
    spring.cloud.nacos.discovery.register-enabled=false
 
-## 实践
+## 实践和问题
 
 1. 注释链接 `{@link SensitiveJsonSerializer}`
 
@@ -125,22 +134,25 @@ kafka / rabbitmq / rocketmq
 
 3. MyBatis日志 `--mybatis-plus.configuration.log-impl=org.apache.ibatis.logging.slf4j.Slf4jImpl`
 
-4. @Import
+4. @Import 和 META-INF/spring.factories
+
 5. FEIGN
 
-1. Feign-APPLICATION_FORM_URLENCODED_VALUE 由 MultiValueMap 生成比较好
+   1. Feign-APPLICATION_FORM_URLENCODED_VALUE 由 MultiValueMap 生成比较好
 
-2. 请求压缩时会有非法字符错误, https://blog.csdn.net/qq_33286757/article/details/147768083 
+   2. 请求压缩时会有非法字符错误, https://blog.csdn.net/qq_33286757/article/details/147768083 
 
-3. default 超时配置无法通过命令行参数覆盖，只能修改nacos；但是如果是具名的client就可以覆盖
+   3. default 超时配置无法通过命令行参数覆盖，只能修改nacos；但是如果是具名的client就可以覆盖
 
-   feign.client.config.default.read-timeout no
+      feign.client.config.default.read-timeout no
 
-   feign.client.config.xxx.read-timeout  yes
+      feign.client.config.xxx.read-timeout  yes
 
-   Feign 配置的超时时间, 代码中 FeignClient 的 Configuration.Class 无效，但是 LogLevel 生效, 通过覆盖 nacos 中的 default 配置解决问题
+      Feign 配置的超时时间, 代码中 FeignClient 的 Configuration.Class 无效，但是 LogLevel 生效, 通过覆盖 nacos 中的 default 配置解决问题
 
+9. 如果想查有哪些拦截器注册, 不可以通过InterceptorRegistry.class的bean去找, 它在mvc配置完成之后就被丢弃. 正确的做法是RequestMappingHandlerMapping
 
+10. 默认 LocaleChangeInterceptor 是未注册的, 可以通过它去init一个, 或者做一个LocaleResolver的bean
 
 
 
