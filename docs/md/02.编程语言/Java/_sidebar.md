@@ -29,5 +29,5 @@
   - [包-04.open-api-v2](/md/02.编程语言/Java/基本概念/包-04.open-api-v2.md)
   - [包-04.open-api](/md/02.编程语言/Java/基本概念/包-04.open-api.md)
 * 工程
-  - [Boot工程](/md/02.编程语言/Java/工程/Boot工程.md)
   - [JAR包运行参数](/md/02.编程语言/Java/工程/JAR包运行参数.md)
+  - [整合建议](/md/02.编程语言/Java/工程/整合建议.md)
