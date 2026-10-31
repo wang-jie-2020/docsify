@@ -6,3 +6,4 @@
 - [PowerShell](/md/05.杂项/PowerShell.md)
 - [软链接](/md/05.杂项/软链接.md)
 - [锂电池背景知识](/md/05.杂项/锂电池背景知识.md)
+- [Typora测试版本过低](/md/05.杂项/Typora测试版本过低.md)
